@@ -1,2 +1,2 @@
-# engineering-blogs-frontend
-Engineering blogs frontend
+# engineering-blogs-app
+Engineering blogs app
