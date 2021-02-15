@@ -9,7 +9,7 @@ const searchClient = instantMeiliSearch(
 
 const Home = () => (
   <InstantSearch
-    indexName="steam-video-games"
+    indexName={process.env.INDEX_NAME}
     searchClient={searchClient}
   >
     <SearchBox />
