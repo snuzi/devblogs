@@ -15,9 +15,12 @@ export const Hit = (props) => {
                         <span>04</span>
                         <label>FEB</label>
                     </div>
-                    <a target={"_blank"} href={props.hit.link}>
-                        <img src={props.hit.image} title="" alt={props.hit.title}/>
-                    </a>
+                    {
+                        props.hit.image && 
+                        <a target={"_blank"} href={props.hit.link}>
+                            <img src={props.hit.image} title="" alt={props.hit.title}/>
+                        </a>
+                    }
                 </div>
                 <div className="blog-info">
                     <h5><a href={props.hit.link}><Highlight attribute="title" hit={props.hit} /></a></h5>
