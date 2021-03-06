@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Contribute
+1. Add tech engineering blogs [awesome-blogs](https://github.com/snuzi/awesome-blogs)
+
+2. Frontend application [engineering-blogs-app](https://github.com/snuzi/engineering-blogs-app)
+
+3. Blog aggregator [engineering-blogs-aggregator](https://github.com/snuzi/engineering-blogs-aggregator)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
