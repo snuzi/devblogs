@@ -25,7 +25,7 @@ const Home = () => (
 
                 <div className="row align-items-start">
                     <div className="col-lg-12">
-                        <h1>Engineering blogs</h1>
+                        <h1>Engineering tech blogs</h1>
                         <SearchBox />
                     </div>
 
