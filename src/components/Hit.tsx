@@ -33,8 +33,12 @@ export const Hit = (props) => {
                     <h5><a href={hit.link}><Highlight attribute="title" hit={props.hit} /></a></h5>
                     <p>{truncateWithEllipses(hit.description, 220)}</p>
                     <div className="btn-bar">
-                        <span>{hit.blogName} - </span>
-                        <span key={hit.link}><ReactTimeAgo date={publishDate} locale="en-US"/> - </span>
+                        <span>
+                            <a target={"_blank"} href={hit.blog.link} className="px-btn-arrow">
+                                {hit.blogName}
+                            </a> - 
+                        </span>
+                        <span key={hit.link}> <ReactTimeAgo date={publishDate} locale="en-US"/> - </span>
                         <a target={"_blank"} href={hit.link} className="px-btn-arrow">
                             <span>Read More</span> 
                             <i className="arrow"></i>

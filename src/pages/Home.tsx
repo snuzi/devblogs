@@ -45,6 +45,18 @@ const Home = () => (
                                 <Configure hitsPerPage={40} />
                             </div>
                         </div>
+                        <div className="widget widget-author">
+                            <div className="widget-title">
+                                <h3>Categories</h3>
+                            </div>
+                            <div className="widget-body">
+                                <RefinementList
+                                    limit={7}
+                                    showMoreLimit={20}
+                                    showMore={true}
+                                    attribute="categories" />
+                            </div>
+                        </div>
                     
                     </div>
                     <div className="col-lg-8 m-15px-tb">
