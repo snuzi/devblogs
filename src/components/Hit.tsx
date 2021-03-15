@@ -15,7 +15,7 @@ export const Hit = (props) => {
     const publishDate = new Date(hit.publish_timestamp * 1000);
 
     return (
-        <div className="col-sm-6">
+        <div className="col-sm-4">
             <div className="blog-grid">
                 <div className="blog-img">
                     <div style={{display:"none"}} className="date">
@@ -31,7 +31,7 @@ export const Hit = (props) => {
                 </div>
                 <div className="blog-info">
                     <h5><a href={hit.link}><Highlight attribute="title" hit={props.hit} /></a></h5>
-                    <p>{truncateWithEllipses(hit.description, 220)}</p>
+                    <p>{truncateWithEllipses(hit.description, 120)}</p>
                     <div className="btn-bar">
                         <span>
                             <a target={"_blank"} href={hit.blog.link} className="px-btn-arrow">

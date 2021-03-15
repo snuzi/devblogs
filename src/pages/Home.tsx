@@ -28,14 +28,13 @@ const Home = () => (
                         <SearchBox />
                     </div>
 
-                    <div className="col-lg-4 m-15px-tb blog-aside">   
-                        <div className="widget widget-author">
+                    <div className="col-lg-3 m-15px-tb blog-aside">   
+                        <div className="widget">
                             <div className="widget-title">
-                                 <ClearRefinements/>
+                                <ClearRefinements/>
                             </div>
                         </div>
-
-                        <div className="widget widget-author">
+                        <div className="widget">
                             <div className="widget-title">
                                 <h3>Blogs</h3>
                             </div>
@@ -44,7 +43,7 @@ const Home = () => (
                                 <Configure hitsPerPage={40} />
                             </div>
                         </div>
-                        <div className="widget widget-author">
+                        <div className="widget">
                             <div className="widget-title">
                                 <h3>Categories</h3>
                             </div>
@@ -58,7 +57,7 @@ const Home = () => (
                         </div>
                     
                     </div>
-                    <div className="col-lg-8 m-15px-tb">
+                    <div className="col-lg-9 m-15px-tb">
                         <div className="row">
                             <Hits />
                             <div className="col-12">
