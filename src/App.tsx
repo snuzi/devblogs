@@ -19,7 +19,7 @@ function App() {
                             <a className="nav-link" href="https://github.com/snuzi/engineering-blogs-app">GitHub</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="https://github.com/snuzi/engineering-blogs-app">Add Blog</a>
+                            <a className="nav-link" href="https://github.com/snuzi/awesome-tech-blogs">Add Blog</a>
                         </li>
                     </ul>
                     </div>
