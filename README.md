@@ -56,3 +56,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Built with:
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [Instant MeiliSearch](https://github.com/meilisearch/instant-meilisearch) - A plugin to establish the communication between your MeiliSearch instance and the open-source InstantSearch tools (powered by Algolia) for your front-end application.
+- [React InstantSearch](https://github.com/algolia/react-instantsearch) - React InstantSearch is a library for building blazing fast search-as-you-type search UIs.
+- [TypeScript](https://www.typescriptlang.org/) - A language for application-scale JavaScript.
