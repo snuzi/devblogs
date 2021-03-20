@@ -9,69 +9,6 @@ require('dotenv').config()
 
 const fetch = require('node-fetch');
 
-const settings = {
-  distinctAttribute: null,
-  searchableAttributes: [
-    'Artist',
-    'Title',
-    'ArtistBio',
-    'Nationality',
-    'Gender',
-    'Date',
-    'Medium',
-    'Department',
-    'MultipleArtists',
-    'DateToSortBy'
-  ],
-  displayedAttributes: [
-    'Title',
-    'Artist',
-    'ArtistBio',
-    'Nationality',
-    'Gender',
-    'Date',
-    'Medium',
-    'Dimensions',
-    'URL',
-    'Department',
-    'Classification',
-    'ThumbnailURL',
-    'MultipleArtists',
-    'DateToSortBy'
-  ],
-  stopWords: ['a', 'an', 'the'],
-  synonyms: { },
-  attributesForFaceting: [
-    'Nationality', 'Gender', 'Classification'
-  ]
-}
-
-const rankingRulesAsc = [
-  'typo',
-  'words',
-  'proximity',
-  'attribute',
-  'wordsPosition',
-  'exactness',
-  'asc(DateToSortBy)'
-]
-const rankingRulesDesc = [
-  'typo',
-  'words',
-  'proximity',
-  'attribute',
-  'wordsPosition',
-  'exactness',
-  'desc(DateToSortBy)'
-]
-const defaultRankingRules = [
-  'typo',
-  'words',
-  'proximity',
-  'attribute',
-  'wordsPosition',
-  'exactness'
-]
 
 const run = async (settings) => {
   // Create client
