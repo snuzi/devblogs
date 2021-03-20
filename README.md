@@ -18,6 +18,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm run start-index`
+Starts meilisearch index docker container.
+
+### `npm run update-index`
+Update index settings and upload sample data to meilisearch index. It is recommended to run this command as often as possible because the index schema might change.
+
 ### `npm start`
 
 Runs the app in the development mode.\
