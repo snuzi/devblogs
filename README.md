@@ -1,15 +1,10 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Demo 
-[https://engtech-blogs.netlify.app/](https://engtech-blogs.netlify.app/)
+# [devblogs.net](https://devblogs.net)
 
 
 ## Contribute
-1. Add tech engineering blogs [awesome-tech-blogs](https://github.com/snuzi/awesome-tech-blogs)
+1. Add tech engineering blogs [awesome-dev-blogs](https://github.com/snuzi/awesome-dev-blogs)
 
-2. Frontend application [engineering-blogs-app](https://github.com/snuzi/engineering-blogs-app)
+2. Frontend application [devblogs](https://github.com/snuzi/devblogs)
 
 3. Blog aggregator [engineering-blogs-aggregator](https://github.com/snuzi/engineering-blogs-aggregator)
 
