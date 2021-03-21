@@ -44,8 +44,7 @@ class InfiniteHits extends Component {
           {hits.map(hit => (
               <Hit hit={hit} />
           ))}
-          <span
-            className="ais-InfiniteHits-sentinel"
+          <span className="ais-InfiniteHits-sentinel"
             // @ts-ignore
             ref={c => (this.sentinel = c)}
           />

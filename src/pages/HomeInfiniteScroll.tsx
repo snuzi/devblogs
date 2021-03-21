@@ -2,40 +2,23 @@ import React from 'react';
 import { 
     InstantSearch,
     SearchBox,
-    Pagination,
     ClearRefinements,
     RefinementList,
     Configure,
 } from 'react-instantsearch-dom';
 import "instantsearch.css/themes/algolia-min.css";
 import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
-import { Hits } from '../components/Hits';
-import { createBrowserHistory } from 'history';
-import ReactGA from 'react-ga';
-
-const history = createBrowserHistory();
-
-ReactGA.initialize(process.env.REACT_APP_GANALYTICS_ID ?? '');
-
-ReactGA.set({ page: 'Home page' }); // Update the user's current page
-ReactGA.pageview('Home page'); // Record a pageview for the given page
-
-// Initialize google analytics page view tracking
-history.listen(location => {
-  ReactGA.set({ page: location.pathname }); // Update the user's current page
-  ReactGA.pageview(location.pathname); // Record a pageview for the given page
-});
+import InfiniteHits from '../components/InfiniteHits';
 
 const searchClient = instantMeiliSearch(
     process.env.REACT_APP_HOST_NAME ?? '',
     process.env.REACT_APP_HOST_KEY ?? ''
 );
 
-const Home = () => (
+const HomeInfiniteScroll = () => (
     <section className="blog-listing gray-bg">
         <div className="container">
             <InstantSearch indexName={process.env.REACT_APP_INDEX_NAME} searchClient={searchClient}>
-
                 <div className="row align-items-start">
                     <div className="col-lg-12">
                         <SearchBox />
@@ -71,12 +54,11 @@ const Home = () => (
                     
                     </div>
                     <div className="col-lg-9 m-15px-tb">
-                        <div className="row">
-                            <Hits />
-                            <div className="col-12">
-                                <Pagination />
-                            </div>
-                        </div>
+                        <Configure
+                            hitsPerPage={12}
+                            attributesToSnippet={["description:50"]}
+                            snippetEllipsisText={"..."}/>
+                        <InfiniteHits />
                     </div>
                 </div>
             </InstantSearch>
@@ -84,4 +66,4 @@ const Home = () => (
     </section>
 );
 
-export default Home;
+export default HomeInfiniteScroll;
