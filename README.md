@@ -3,11 +3,8 @@
 
 ## Contribute
 1. Add your dev blog [awesome-dev-blogs](https://github.com/snuzi/awesome-dev-blogs)
-
 2. Frontend application [devblogs](https://github.com/snuzi/devblogs)
-
-3. Blog aggregator [engineering-blogs-aggregator](https://github.com/snuzi/engineering-blogs-aggregator)
-
+3. Blog aggregator [devblogs-aggregator](https://github.com/snuzi/devblogs-aggregator)
 
 ## Available Scripts
 
