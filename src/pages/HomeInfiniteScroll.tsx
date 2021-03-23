@@ -35,7 +35,11 @@ const HomeInfiniteScroll = () => (
                                 <h3>Blogs</h3>
                             </div>
                             <div className="widget-body">
-                                <RefinementList attribute="blogName" />
+                                <RefinementList
+                                    limit={30}
+                                    showMoreLimit={100}
+                                    showMore={true}
+                                    attribute="blogName" />
                                 <Configure hitsPerPage={40} />
                             </div>
                         </div>
