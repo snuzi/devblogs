@@ -30,14 +30,13 @@ export const Hit = (props) => {
                         <div className="mr-2">
                             <a className="text-gray-600 text-sm">
                                 <ReactTimeAgo date={publishDate} locale="en-US"/>
-                            </a>
-                            {
-                                hit.categories.map(cat => {
-                                    return <span className="text-gray-600 text-sm mx-1 bg-gray-100 rounded px-2 py-1">{cat}</span>
-                                })
-                            }
+                            </a>  
                         </div>
-                       
+                        {
+                            hit.categories.map(cat => {
+                                return <span className="text-gray-600 text-sm mx-1 bg-gray-100 rounded px-2 py-1 post-category">{cat}</span>
+                            })
+                        }
                     <div>
                     
                 </div>
