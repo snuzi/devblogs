@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connectInfiniteHits } from 'react-instantsearch-dom';
 import PropTypes from 'prop-types';
-import { Hit } from './Hit';
+import { Hit } from './HitListItem';
 
 class InfiniteHits extends Component {
   static propTypes = {
@@ -40,7 +40,7 @@ class InfiniteHits extends Component {
     const { hits } = this.props;
 
     return (
-      <div className="row">
+      <div className="">
           {hits.map(hit => (
               <Hit hit={hit} />
           ))}

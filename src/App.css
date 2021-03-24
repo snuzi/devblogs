@@ -116,8 +116,8 @@
 }
 .blog-aside .widget-title h3 {
   font-size: 20px;
-  font-weight: 700;
-  color: #fc5356;
+  font-weight: 400;
+  color: #000000;
   margin: 0;
 }
 .blog-aside .widget-author .media {
@@ -302,14 +302,130 @@
   margin-bottom: 25px;
   font-size: 22px;
 }
-img {
-    max-width: 100%;
-}
+
 img {
     vertical-align: middle;
     border-style: none;
+    max-width: 100%;
 }
 
 .ais-RefinementList-labelText {
   margin-left: 5px;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.has-text-dark {
+  color: #363636!important;
+}
+
+a {
+  color: #363636!important;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.text-gray-900 {
+    --text-opacity: 1;
+    color: #1a202c;
+    color: rgba(26,32,44,var(--text-opacity));
+}
+
+.text-gray-600 {
+    --text-opacity: 1;
+    color: #718096;
+    color: rgba(113,128,150,var(--text-opacity));
+}
+
+.text-gray-600 time {
+    --text-opacity: 1;
+    color: #718096;
+    color: rgba(113,128,150,var(--text-opacity));
+}
+
+.blog-item {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.px-2 {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.py-1 {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+.mx-1 {
+    margin-left: .25rem;
+    margin-right: .25rem;
+}
+
+.text-sm {
+    font-size: .875rem;
+}
+
+.rounded {
+    border-radius: .25rem;
+}
+
+.bg-gray-100 {
+    --bg-opacity: 1;
+    background-color: #f7fafc;
+    background-color: rgba(247,250,252,var(--bg-opacity));
+}
+
+span {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+.mx-2 {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.text-sm {
+    font-size: .875rem;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.bg-gray-100 {
+    --bg-opacity: 1;
+    background-color: #f7fafc;
+    background-color: rgba(247,250,252,var(--bg-opacity));
+}
+
+.list-container {
+    margin-top: 15px;
+}
+
+
+body, button, input, optgroup, select, textarea {
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif  !important;
+}
+
+.logo-title {
+    font-weight: 600;
 }
