@@ -40,7 +40,7 @@ class InfiniteHits extends Component {
     const { hits } = this.props;
 
     return (
-      <div className="row">
+      <div className="">
           {hits.map(hit => (
               <Hit hit={hit} />
           ))}

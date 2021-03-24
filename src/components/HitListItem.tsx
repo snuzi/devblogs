@@ -24,22 +24,22 @@ export const Hit = (props) => {
                         {hit.blogName}
                     </a>
                 </div>
-                <h2><a href={hit.link}><Highlight attribute="title" hit={props.hit} /></a></h2>
-                    <p className="post_link text-2xl font-semibold text-gray-900">{truncateWithEllipses(hit.description, 120)}</p>
+                <h2><a className={"post_link text-2xl font-semibold text-gray-900"} href={hit.link}>{props.hit.title}</a></h2>
+                    <p className="text-gray-600">{truncateWithEllipses(hit.description, 120)}</p>
                     <div className="flex mt-2 flex-wrap -ml-1">
                         <div className="mr-2">
                             <a className="text-gray-600 text-sm">
                                 <ReactTimeAgo date={publishDate} locale="en-US"/>
                             </a>
+                            {
+                                hit.categories.map(cat => {
+                                    return <span className="text-gray-600 text-sm mx-1 bg-gray-100 rounded px-2 py-1">{cat}</span>
+                                })
+                            }
                         </div>
+                       
                     <div>
-                    <div>
-                        {
-                            hit.categories.map(cat => {
-                                return <span className="text-gray-600 text-sm mx-1 bg-gray-100 rounded px-2 py-1">{cat}</span>
-                            })
-                        }
-                    </div>
+                    
                 </div>
             </div>
         </div>

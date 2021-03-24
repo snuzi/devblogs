@@ -57,7 +57,7 @@ const HomeInfiniteScroll = () => (
                         </div>
                     
                     </div>
-                    <div className="col-lg-9 m-15px-tb">
+                    <div className="col-lg-9 list-container">
                         <Configure
                             hitsPerPage={12}
                             attributesToSnippet={["description:50"]}
