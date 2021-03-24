@@ -429,3 +429,22 @@ body, button, input, optgroup, select, textarea {
 .logo-title {
     font-weight: 600;
 }
+
+.-ml-1 {
+    margin-left: -.25rem;
+}
+
+.mt-2 {
+    margin-top: .5rem;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex {
+    display: flex;
+}
+
+.post-category {
+    font-style: italic;
+}
