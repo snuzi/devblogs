@@ -9,11 +9,26 @@ import {
 import "instantsearch.css/themes/algolia-min.css";
 import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
 import InfiniteHits from '../components/InfiniteHits';
+import { createBrowserHistory } from 'history';
+import ReactGA from 'react-ga';
 
 const searchClient = instantMeiliSearch(
     process.env.REACT_APP_HOST_NAME ?? '',
     process.env.REACT_APP_HOST_KEY ?? ''
 );
+    
+const history = createBrowserHistory();
+
+ReactGA.initialize(process.env.REACT_APP_GANALYTICS_ID ?? '');
+
+ReactGA.set({ page: 'Home page' }); // Update the user's current page
+ReactGA.pageview('Home page'); // Record a pageview for the given page
+
+// Initialize google analytics page view tracking
+history.listen(location => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
 
 const HomeInfiniteScroll = () => (
     <section className="blog-listing gray-bg">
