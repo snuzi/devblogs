@@ -191,24 +191,6 @@
   margin-right: 10px;
 }
 
-.tag-cloud a {
-  padding: 4px 15px;
-  font-size: 13px;
-  color: #ffffff;
-  background: #20247b;
-  border-radius: 3px;
-  margin-right: 4px;
-  margin-bottom: 4px;
-}
-.tag-cloud a:hover {
-  background: #fc5356;
-}
-
-.blog-single {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .article {
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
   border-radius: 5px;
@@ -267,40 +249,8 @@
   font-weight: 600;
   margin-bottom: 15px;
 }
-.article .article-content blockquote {
-  max-width: 600px;
-  padding: 15px 0 30px 0;
-  margin: 0;
-}
-.article .article-content blockquote p {
-  font-size: 20px;
-  font-weight: 500;
-  color: #fc5356;
-  margin: 0;
-}
-.article .article-content blockquote .blockquote-footer {
-  color: #20247b;
-  font-size: 16px;
-}
-.article .article-content blockquote .blockquote-footer cite {
-  font-weight: 600;
-}
 .article .tag-cloud {
   padding-top: 10px;
-}
-
-.article-comment {
-  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
-  border-radius: 5px;
-  overflow: hidden;
-  background: #ffffff;
-  padding: 20px;
-}
-.article-comment h4 {
-  color: #20247b;
-  font-weight: 700;
-  margin-bottom: 25px;
-  font-size: 22px;
 }
 
 img {
@@ -447,4 +397,8 @@ body, button, input, optgroup, select, textarea {
 
 .post-category {
     font-style: italic;
+}
+
+.part-highlighted {
+    background-color: #ffc168;
 }
