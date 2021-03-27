@@ -18,6 +18,12 @@ const searchClient = instantMeiliSearch(
 const HomeInfiniteScroll = () => (
     <section className="blog-listing gray-bg">
         <div className="container">
+        <div className="blog-type-selectors">
+            <span className="blog-type-selector">Company</span>
+            <span className="blog-type-selector">Individual</span>
+            <span className="blog-type-selector">ALL</span>
+
+        </div>  
             <InstantSearch indexName={process.env.REACT_APP_INDEX_NAME} searchClient={searchClient}>
                 <div className="row align-items-start">
                     <div className="col-lg-12">
