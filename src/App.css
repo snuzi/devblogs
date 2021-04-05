@@ -417,3 +417,7 @@ body, button, input, optgroup, select, textarea {
     padding: 5px 10px 5px;
     margin: 5px;
 }
+
+span.capitalize {
+  text-transform: capitalize;
+}
