@@ -406,7 +406,8 @@ body, button, input, optgroup, select, textarea {
 .blog-type-selectors {
     display: flex;
     flex-direction: row;
-    
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .blog-type-selector {
