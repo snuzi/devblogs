@@ -18,8 +18,7 @@ const Menu = ({ items, isFromSearch, refine, createURL }) => (
                         <span className="capitalize">
                             {item.label}
                         </span>
-                    )}{' '}
-                    ({item.count})
+                    )}
                 </a>
             </div>
         ))}
