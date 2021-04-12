@@ -402,3 +402,23 @@ body, button, input, optgroup, select, textarea {
 .part-highlighted {
     background-color: #ffc168;
 }
+
+.blog-type-selectors {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.blog-type-selector {
+    border-radius: 5px;
+    border-color: #8fa3a3;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px 10px 5px;
+    margin: 5px;
+}
+
+span.capitalize {
+  text-transform: capitalize;
+}

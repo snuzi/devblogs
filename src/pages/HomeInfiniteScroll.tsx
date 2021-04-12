@@ -9,6 +9,8 @@ import {
 import "instantsearch.css/themes/algolia-min.css";
 import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
 import InfiniteHits from '../components/InfiniteHits';
+import BlogTypeRefinementList from '../components/BlogTypeRefinementList';
+import BlogTypeMenu from '../components/BlogTypeMenu';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 
@@ -34,6 +36,10 @@ const HomeInfiniteScroll = () => (
     <section className="blog-listing gray-bg">
         <div className="container">
             <InstantSearch indexName={process.env.REACT_APP_INDEX_NAME} searchClient={searchClient}>
+                <BlogTypeMenu
+                    defaultRefinement={['company']}
+                    attribute="blogType"
+                />
                 <div className="row align-items-start">
                     <div className="col-lg-12">
                         <SearchBox />
@@ -42,7 +48,11 @@ const HomeInfiniteScroll = () => (
                     <div className="col-lg-3 m-15px-tb blog-aside">   
                         <div className="widget">
                             <div className="widget-title">
-                                <ClearRefinements/>
+                                <ClearRefinements
+                                    transformItems={items =>
+                                        items.filter(({ attribute }) => attribute !== 'blogType')
+                                    }
+                                />
                             </div>
                         </div>
                         <div className="widget">
