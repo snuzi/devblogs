@@ -37,7 +37,7 @@ const HomeInfiniteScroll = () => (
         <div className="container">
             <InstantSearch indexName={process.env.REACT_APP_INDEX_NAME} searchClient={searchClient}>
                 <BlogTypeMenu
-                    defaultRefinement={['company']}
+                    //defaultRefinement={['company']}
                     attribute="blogType"
                 />
                 <div className="row align-items-start">
