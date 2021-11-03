@@ -61,6 +61,7 @@ const HomeInfiniteScroll = () => (
                             </div>
                             <div className="widget-body">
                                 <RefinementList
+                                    operator={"or"}
                                     limit={30}
                                     showMoreLimit={100}
                                     showMore={true}

@@ -42,7 +42,7 @@ class InfiniteHits extends Component {
     return (
       <div className="">
           {hits.map(hit => (
-              <Hit hit={hit} />
+              <Hit key={hit.link} hit={hit} />
           ))}
           <span className="ais-InfiniteHits-sentinel"
             // @ts-ignore
