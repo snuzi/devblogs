@@ -10,28 +10,26 @@ class InfiniteHits extends Component {
     refine: PropTypes.func.isRequired,
   };
 
-  sentinel = null;
+  sentinel!: Element;
+  observer!: IntersectionObserver;
 
   onSentinelIntersection = entries => {
     // @ts-ignore
-    const { hasMore, refine } = this.props;
+    const { hasMore, refineNext } = this.props;
 
     entries.forEach(entry => {
       if (entry.isIntersecting && hasMore) {
-        refine();
+        refineNext();
       }
     });
   };
 
   componentDidMount() {
-    // @ts-ignore
     this.observer = new IntersectionObserver(this.onSentinelIntersection);
-    // @ts-ignore
     this.observer.observe(this.sentinel);
   }
 
   componentWillUnmount() {
-    // @ts-ignore
     this.observer.disconnect();
   }
 
