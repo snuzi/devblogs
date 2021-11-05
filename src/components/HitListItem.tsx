@@ -38,8 +38,8 @@ export const Hit = (props) => {
                     </a>  
                 </div>
                 {
-                    hit.categories.map(cat => {
-                        return <span className="text-gray-600 text-sm mx-1 bg-gray-100 rounded px-2 py-1 post-category">{cat}</span>
+                    hit.categories.map((cat, index) => {
+                        return <span key={'category-' + index + hit.link} className="text-gray-600 text-sm mx-1 bg-gray-100 rounded px-2 py-1 post-category">{cat}</span>
                     })
                 }
             </div>
