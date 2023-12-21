@@ -24,22 +24,22 @@ export const Hit = (props) => {
                     </div>
                     {
                         props.hit.image && 
-                        <a target={"_blank"} href={props.hit.link}>
+                        <a target="_blank" href={props.hit.link}>
                             <img src={hit.image} title="" alt={props.hit.title}/>
                         </a>
                     }
                 </div>
                 <div className="blog-info">
-                    <h5><a href={hit.link}><Highlight attribute="title" hit={props.hit} /></a></h5>
+                    <h5><a target="_blank" href={hit.link}><Highlight attribute="title" hit={props.hit} /></a></h5>
                     <p>{truncateWithEllipses(hit.description, 120)}</p>
                     <div className="btn-bar">
                         <span>
-                            <a target={"_blank"} href={hit.blog.link} className="px-btn-arrow">
+                            <a target="_blank" href={hit.blog.link} className="px-btn-arrow">
                                 {hit.blogName}
                             </a> - 
                         </span>
                         <span key={hit.link}> <ReactTimeAgo date={publishDate} locale="en-US"/> - </span>
-                        <a target={"_blank"} href={hit.link} className="px-btn-arrow">
+                        <a target="_blank" href={hit.link} className="px-btn-arrow">
                             <span>Read More</span> 
                             <i className="arrow"></i>
                         </a>
