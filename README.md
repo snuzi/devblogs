@@ -1,4 +1,4 @@
-# [devblogs.net](https://devblogs.net)
+# [devblogs.nuzi.eu](https://devblogs.nuzi.eu)
 
 
 ## Contribute
