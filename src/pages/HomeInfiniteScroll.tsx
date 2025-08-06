@@ -9,7 +9,6 @@ import {
 import "instantsearch.css/themes/algolia-min.css";
 import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
 import InfiniteHits from '../components/InfiniteHits';
-import BlogTypeRefinementList from '../components/BlogTypeRefinementList';
 import BlogTypeMenu from '../components/BlogTypeMenu';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
@@ -27,7 +26,7 @@ ReactGA.set({ page: 'Home page' }); // Update the user's current page
 ReactGA.pageview('Home page'); // Record a pageview for the given page
 
 // Initialize google analytics page view tracking
-history.listen(location => {
+history.listen(({ location }) => {
   ReactGA.set({ page: location.pathname }); // Update the user's current page
   ReactGA.pageview(location.pathname); // Record a pageview for the given page
 });

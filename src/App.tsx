@@ -2,19 +2,19 @@ import React from 'react';
 import './App.css';
 import Home from './pages/HomeInfiniteScroll';
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 function App() {
   return (
       <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container">
-                    <a className="navbar-brand logo-title" href="#">DevBlogs.net</a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <a className="navbar-brand logo-title" href="/">DevBlogs.net</a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                         </button>
                     <div className="collapse navbar-collapse" id="navbarResponsive">
-                    <ul className="navbar-nav ml-auto">
+                    <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
                             <a className="nav-link" href="https://github.com/snuzi/devblogs">GitHub</a>
                         </li>

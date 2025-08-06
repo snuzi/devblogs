@@ -20,8 +20,8 @@ export const Hit = (props) => {
     return (
         <div className="col-sm-12 blog-item">
             <div className="flex justify-start items-center">
-                <img className="flex-initial h-5 rounded" src={blogImage} />
-                <a target={"_blank"} href={hit.blog.link} className="flex-initial font-medium has-text-dark mx-2 text-sm">
+                <img className="flex-initial h-5 rounded" src={blogImage} alt={`${hit.blogName} blog avatar`} />
+                <a target={"_blank"} rel="noreferrer" href={hit.blog.link} className="flex-initial font-medium has-text-dark mx-2 text-sm">
                     {hit.blogName}
                 </a>
             </div>
@@ -33,9 +33,9 @@ export const Hit = (props) => {
             <p className="text-gray-600">{truncateWithEllipses(hit.description, 120)}</p>
             <div className="flex mt-2 flex-wrap -ml-1">
                 <div className="mr-2">
-                    <a className="text-gray-600 text-sm">
+                    <span className="text-gray-600 text-sm">
                         <ReactTimeAgo date={publishDate} locale="en-US"/>
-                    </a>  
+                    </span>  
                 </div>
                 {
                     hit.categories.map((cat, index) => {
